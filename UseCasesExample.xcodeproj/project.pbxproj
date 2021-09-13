@@ -11,19 +11,13 @@
 		EF840D0C26EFC7C50088A34F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF840D0B26EFC7C50088A34F /* ContentView.swift */; };
 		EF840D0E26EFC7C70088A34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF840D0D26EFC7C70088A34F /* Assets.xcassets */; };
 		EF840D1126EFC7C70088A34F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF840D1026EFC7C70088A34F /* Preview Assets.xcassets */; };
-		EF840D1B26EFC7C70088A34F /* UseCasesExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF840D1A26EFC7C70088A34F /* UseCasesExampleTests.swift */; };
-		EF840D2526EFC7C70088A34F /* UseCasesExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF840D2426EFC7C70088A34F /* UseCasesExampleUITests.swift */; };
+		EF840D1B26EFC7C70088A34F /* SetUserInfoIntoStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF840D1A26EFC7C70088A34F /* SetUserInfoIntoStorageTests.swift */; };
+		EF840D3326EFC88D0088A34F /* SetUserInfoIntoStorageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF840D3226EFC88D0088A34F /* SetUserInfoIntoStorageUseCase.swift */; };
+		EF840D3B26EFD0B30088A34F /* MyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF840D3A26EFD0B30088A34F /* MyStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		EF840D1726EFC7C70088A34F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EF840CFE26EFC7C50088A34F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF840D0526EFC7C50088A34F;
-			remoteInfo = UseCasesExample;
-		};
-		EF840D2126EFC7C70088A34F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EF840CFE26EFC7C50088A34F /* Project object */;
 			proxyType = 1;
@@ -39,9 +33,9 @@
 		EF840D0D26EFC7C70088A34F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF840D1026EFC7C70088A34F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF840D1626EFC7C70088A34F /* UseCasesExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF840D1A26EFC7C70088A34F /* UseCasesExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesExampleTests.swift; sourceTree = "<group>"; };
-		EF840D2026EFC7C70088A34F /* UseCasesExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF840D2426EFC7C70088A34F /* UseCasesExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesExampleUITests.swift; sourceTree = "<group>"; };
+		EF840D1A26EFC7C70088A34F /* SetUserInfoIntoStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUserInfoIntoStorageTests.swift; sourceTree = "<group>"; };
+		EF840D3226EFC88D0088A34F /* SetUserInfoIntoStorageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUserInfoIntoStorageUseCase.swift; sourceTree = "<group>"; };
+		EF840D3A26EFD0B30088A34F /* MyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +53,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF840D1D26EFC7C70088A34F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,7 +61,6 @@
 			children = (
 				EF840D0826EFC7C50088A34F /* UseCasesExample */,
 				EF840D1926EFC7C70088A34F /* UseCasesExampleTests */,
-				EF840D2326EFC7C70088A34F /* UseCasesExampleUITests */,
 				EF840D0726EFC7C50088A34F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +70,6 @@
 			children = (
 				EF840D0626EFC7C50088A34F /* UseCasesExample.app */,
 				EF840D1626EFC7C70088A34F /* UseCasesExampleTests.xctest */,
-				EF840D2026EFC7C70088A34F /* UseCasesExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,10 +77,12 @@
 		EF840D0826EFC7C50088A34F /* UseCasesExample */ = {
 			isa = PBXGroup;
 			children = (
+				EF840D3426EFC89D0088A34F /* UseCases */,
 				EF840D0926EFC7C50088A34F /* UseCasesExampleApp.swift */,
 				EF840D0B26EFC7C50088A34F /* ContentView.swift */,
 				EF840D0D26EFC7C70088A34F /* Assets.xcassets */,
 				EF840D0F26EFC7C70088A34F /* Preview Content */,
+				EF840D3A26EFD0B30088A34F /* MyStorage.swift */,
 			);
 			path = UseCasesExample;
 			sourceTree = "<group>";
@@ -111,17 +98,17 @@
 		EF840D1926EFC7C70088A34F /* UseCasesExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF840D1A26EFC7C70088A34F /* UseCasesExampleTests.swift */,
+				EF840D1A26EFC7C70088A34F /* SetUserInfoIntoStorageTests.swift */,
 			);
 			path = UseCasesExampleTests;
 			sourceTree = "<group>";
 		};
-		EF840D2326EFC7C70088A34F /* UseCasesExampleUITests */ = {
+		EF840D3426EFC89D0088A34F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				EF840D2426EFC7C70088A34F /* UseCasesExampleUITests.swift */,
+				EF840D3226EFC88D0088A34F /* SetUserInfoIntoStorageUseCase.swift */,
 			);
-			path = UseCasesExampleUITests;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,24 +149,6 @@
 			productReference = EF840D1626EFC7C70088A34F /* UseCasesExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EF840D1F26EFC7C70088A34F /* UseCasesExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EF840D2E26EFC7C70088A34F /* Build configuration list for PBXNativeTarget "UseCasesExampleUITests" */;
-			buildPhases = (
-				EF840D1C26EFC7C70088A34F /* Sources */,
-				EF840D1D26EFC7C70088A34F /* Frameworks */,
-				EF840D1E26EFC7C70088A34F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EF840D2226EFC7C70088A34F /* PBXTargetDependency */,
-			);
-			name = UseCasesExampleUITests;
-			productName = UseCasesExampleUITests;
-			productReference = EF840D2026EFC7C70088A34F /* UseCasesExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,10 +163,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					EF840D1526EFC7C70088A34F = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = EF840D0526EFC7C50088A34F;
-					};
-					EF840D1F26EFC7C70088A34F = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = EF840D0526EFC7C50088A34F;
 					};
@@ -218,7 +183,6 @@
 			targets = (
 				EF840D0526EFC7C50088A34F /* UseCasesExample */,
 				EF840D1526EFC7C70088A34F /* UseCasesExampleTests */,
-				EF840D1F26EFC7C70088A34F /* UseCasesExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,13 +204,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF840D1E26EFC7C70088A34F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -254,7 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF840D3326EFC88D0088A34F /* SetUserInfoIntoStorageUseCase.swift in Sources */,
 				EF840D0C26EFC7C50088A34F /* ContentView.swift in Sources */,
+				EF840D3B26EFD0B30088A34F /* MyStorage.swift in Sources */,
 				EF840D0A26EFC7C50088A34F /* UseCasesExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,15 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF840D1B26EFC7C70088A34F /* UseCasesExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF840D1C26EFC7C70088A34F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF840D2526EFC7C70088A34F /* UseCasesExampleUITests.swift in Sources */,
+				EF840D1B26EFC7C70088A34F /* SetUserInfoIntoStorageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +233,6 @@
 			isa = PBXTargetDependency;
 			target = EF840D0526EFC7C50088A34F /* UseCasesExample */;
 			targetProxy = EF840D1726EFC7C70088A34F /* PBXContainerItemProxy */;
-		};
-		EF840D2226EFC7C70088A34F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EF840D0526EFC7C50088A34F /* UseCasesExample */;
-			targetProxy = EF840D2126EFC7C70088A34F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,50 +459,6 @@
 			};
 			name = Release;
 		};
-		EF840D2F26EFC7C70088A34F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Durazo.UseCasesExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UseCasesExample;
-			};
-			name = Debug;
-		};
-		EF840D3026EFC7C70088A34F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Durazo.UseCasesExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UseCasesExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,15 +485,6 @@
 			buildConfigurations = (
 				EF840D2C26EFC7C70088A34F /* Debug */,
 				EF840D2D26EFC7C70088A34F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EF840D2E26EFC7C70088A34F /* Build configuration list for PBXNativeTarget "UseCasesExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EF840D2F26EFC7C70088A34F /* Debug */,
-				EF840D3026EFC7C70088A34F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
