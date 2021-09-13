@@ -34,7 +34,7 @@ class SetUserInfoIntoStorageTests: XCTestCase {
         
         // then
         guard let userInfoSaved = mockStorage.object(forKey: SetUserInfoIntoStorageImp.kUserKey) as? [String: String] else {
-            XCTFail("There's should be the user saved")
+            XCTFail("There's should be saved the info")
             return
         }
         
