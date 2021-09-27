@@ -1,2 +1,2 @@
-# UseCaseExampleSwift
-Swift | A little twist for use cases.
+### This is an example repository in order to explain a little bit more about the use cases at Swift. 
+### You can read more about this at: https://medium.com/@leo.durazod/swift-a-use-cases-approach-580ac0654103
